@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>Curso JavaScript</title>
+            <meta charset="UTF-8">
+            <script type="text/javascript" src="Js/main.js"></script>
+        </head>
+        <!--Função  onload carrega alguma coisa no instante em que a pagina é carregada-->
+        <body onload="load()">
+            <h1>Minha Pagina</h1>
+            <button type="button" onclick="clicou()">Clique Aqui</button>
+                <p id="agradecimento" onclick="redirecionar()"></p>
+                <!--Função onmouseover quando passa o mouse no elemento do DOM acontecer alguma coisa-->
+                <!--Função onmouseout quando tira o mouse no elemento do DOM acontecer alguma coisa-->
+                <p  onmouseover="trocar(this)" onmouseout="voltar(this)">Passe ou Mouse Aqui</p>
+                <p  onmouseover="trocar(this)" onmouseout="voltar(this)">Passe ou Mouse Aqui</p>
+                <select onchange="funcaoChange(this)">
+                    <option value="1">Lucas</option>
+                    <option value="2">Mario</option>
+                    <option value="3">Leticia</option>
+                </select>
+        </body>
+    </html>
